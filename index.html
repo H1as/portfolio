@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebogo Gift Nkosi | Cybersecurity Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 3D Background System -->
+    <canvas id="bgCanvas"></canvas>
+    <div id="particles-container"></div>
+    
+    <!-- 3D Interactive Background Grid -->
+    <div class="grid-overlay-3d"></div>
+    
+    <!-- Specialized 3D Elements for Each Section -->
+    <div class="section-3d-elements">
+        <!-- Skills Section 3D -->
+        <div class="skills-3d-orbit" id="skills-orbit-1">
+            <div class="orbit-item"><i class="fas fa-code"></i></div>
+        </div>
+        <div class="skills-3d-orbit" id="skills-orbit-2">
+            <div class="orbit-item"><i class="fas fa-shield-alt"></i></div>
+        </div>
+        <div class="skills-3d-orbit" id="skills-orbit-3">
+            <div class="orbit-item"><i class="fas fa-network-wired"></i></div>
+        </div>
+        
+        <!-- Portfolio Section 3D -->
+        <div class="portfolio-3d-element" id="portfolio-element-1">
+            <div class="dataflow-3d">
+                <div class="data-node"></div>
+                <div class="data-node"></div>
+                <div class="data-node"></div>
+            </div>
+        </div>
+        <div class="portfolio-3d-element" id="portfolio-element-2">
+            <div class="network-3d">
+                <div class="network-node"></div>
+                <div class="network-node"></div>
+                <div class="network-node"></div>
+            </div>
+        </div>
+    </div>
+    
+    <header class="site-header">
+        <div class="container">
+            <div class="header-brand">
+                <div class="logo">TEBOGO GIFT NKOSI</div>
+                <div class="tagline">Cybersecurity & Networking Specialist</div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact" class="nav-btn">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <button class="toggle-3d" aria-label="Toggle 3D effects">
+                    <i class="fas fa-cube"></i>
+                    <span class="toggle-3d-text">3D</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Building <span class="highlight">Secure Digital Solutions</span></h1>
+                    <h2 class="hero-subtitle">Cybersecurity & Networking Specialist</h2>
+                    <p class="hero-description">
+                        I design and implement robust security infrastructures and network solutions that protect digital assets and enable secure business growth.
+                        From penetration testing to secure network architecture, I deliver solutions that meet modern cybersecurity challenges.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#portfolio" class="btn btn-secondary">View Security Portfolio</a>
+                    </div>
+                </div>
+                
+                <!-- Hero 3D Visualization -->
+                <div class="hero-3d-visualization">
+                    <div class="security-matrix-3d">
+                        <div class="matrix-grid">
+                            <div class="matrix-cell" data-status="secure"></div>
+                            <div class="matrix-cell" data-status="vulnerable"></div>
+                            <div class="matrix-cell" data-status="secure"></div>
+                            <div class="matrix-cell" data-status="attack"></div>
+                            <div class="matrix-cell" data-status="secure"></div>
+                            <div class="matrix-cell" data-status="monitoring"></div>
+                            <div class="matrix-cell" data-status="secure"></div>
+                            <div class="matrix-cell" data-status="secure"></div>
+                            <div class="matrix-cell" data-status="threat"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I am a dedicated ICT student at Tshwane University of Technology, specializing in Networking and Security. I enjoy solving real-world technical problems and building reliable systems — from secure websites to network configurations.</p>
+                        <p>As the CTO and Co-Founder of Cypher Core Security,
+                            I lead operations, manage client projects, and help create technology solutions that are both functional and secure. 
+                            I am committed to learning, improving, and applying my skills to deliver high-quality results in everything I do.
+                        </p>
+                        <div class="info-grid">
+                            <div class="info-item"><strong>Name:</strong> Tebogo Gift Nkosi</div>
+                            <div class="info-item"><strong>Phone:</strong> 063 264 0326</div>
+                            <div class="info-item"><strong>Email:</strong> tebogotshepiso31@gmail.com</div>
+                            <div class="info-item"><strong>Location:</strong> Pretoria, South Africa</div>
+                            <div class="info-item"><strong>LinkedIn:</strong> <a href="https://linkedin.com" target="_blank">View Profile</a></div>
+                        </div>
+                    </div>
+                    
+                    <!-- About 3D Timeline -->
+                    <div class="about-3d-timeline">
+                        <div class="timeline-container">
+                            <div class="timeline-marker" data-year="2023">
+                                <div class="marker-content">
+                                    <h4>CTO & Co-Founder</h4>
+                                    <p>Cypher Core Security</p>
+                                </div>
+                            </div>
+                            <div class="timeline-marker" data-year="2022">
+                                <div class="marker-content">
+                                    <h4>ICT Student</h4>
+                                    <p>Tshwane University</p>
+                                </div>
+                            </div>
+                            <div class="timeline-marker" data-year="2021">
+                                <div class="marker-content">
+                                    <h4>Started Learning</h4>
+                                    <p>Cybersecurity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Hover or tap on skill categories for detailed breakdown</p>
+                
+                <!-- Skills 3D Visualization -->
+                <div class="skills-3d-container">
+                    <div class="skill-sphere-3d">
+                        <!-- Sphere will be generated with JS -->
+                    </div>
+                </div>
+                
+                <div class="skills-container">
+                    <div class="skill-category" data-3d-type="orbit" data-category="programming">
+                        <div class="category-3d-inner">
+                            <div class="category-front">
+                                <h3><i class="fas fa-code"></i> Programming & Development</h3>
+                                <div class="skill"><span>Java</span><div class="skill-bar"><div class="skill-level" data-level="85"></div></div><span>85%</span></div>
+                                <div class="skill"><span>HTML5/CSS3</span><div class="skill-bar"><div class="skill-level" data-level="90"></div></div><span>90%</span></div>
+                                <div class="skill"><span>JavaScript</span><div class="skill-bar"><div class="skill-level" data-level="75"></div></div><span>75%</span></div>
+                            </div>
+                            <div class="category-back">
+                                <h4>Programming Expertise</h4>
+                                <ul>
+                                    <li>Object-Oriented Programming</li>
+                                    <li>Web Development</li>
+                                    <li>API Integration</li>
+                                    <li>Database Design</li>
+                                </ul>
+                                <div class="skill-badge">Java Certified</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" data-3d-type="rotation" data-category="security">
+                        <div class="category-3d-inner">
+                            <div class="category-front">
+                                <h3><i class="fas fa-shield-alt"></i> Cybersecurity Tools</h3>
+                                <div class="skill"><span>Wireshark</span><div class="skill-bar"><div class="skill-level" data-level="85"></div></div><span>85%</span></div>
+                                <div class="skill"><span>Metasploit</span><div class="skill-bar"><div class="skill-level" data-level="80"></div></div><span>80%</span></div>
+                                <div class="skill"><span>Hashcat</span><div class="skill-bar"><div class="skill-level" data-level="75"></div></div><span>75%</span></div>
+                            </div>
+                            <div class="category-back">
+                                <h4>Security Capabilities</h4>
+                                <ul>
+                                    <li>Penetration Testing</li>
+                                    <li>Vulnerability Assessment</li>
+                                    <li>Network Monitoring</li>
+                                    <li>Security Auditing</li>
+                                </ul>
+                                <div class="skill-badge">Security Tools Expert</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" data-3d-type="cube" data-category="networking">
+                        <div class="category-3d-inner">
+                            <div class="category-front">
+                                <h3><i class="fas fa-network-wired"></i> Networking</h3>
+                                <div class="skill"><span>Cisco Packet Tracer</span><div class="skill-bar"><div class="skill-level" data-level="90"></div></div><span>90%</span></div>
+                                <div class="skill"><span>Network Security</span><div class="skill-bar"><div class="skill-level" data-level="85"></div></div><span>85%</span></div>
+                                <div class="skill"><span>Linux Command Line</span><div class="skill-bar"><div class="skill-level" data-level="80"></div></div><span>80%</span></div>
+                            </div>
+                            <div class="category-back">
+                                <h4>Networking Skills</h4>
+                                <ul>
+                                    <li>CCNA Certified</li>
+                                    <li>Network Architecture</li>
+                                    <li>Protocol Analysis</li>
+                                    <li>Infrastructure Design</li>
+                                </ul>
+                                <div class="skill-badge">Network Specialist</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skills Detail Panel -->
+                <div class="skills-detail-panel">
+                    <div class="detail-header">
+                        <h3>Skill Details</h3>
+                        <button class="detail-close"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="detail-content">
+                        <!-- Content populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <h2 class="section-title">Professional Experience</h2>
+                
+                <!-- Experience Timeline 3D -->
+                <div class="experience-timeline-3d">
+                    <div class="timeline-track">
+                        <div class="timeline-event" data-year="2023" data-position="current">
+                            <div class="event-content">
+                                <h3>CTO & Co-Founder</h3>
+                                <p>Cypher Core Security</p>
+                            </div>
+                        </div>
+                        <div class="timeline-event" data-year="2022" data-position="past">
+                            <div class="event-content">
+                                <h3>Freelance Security Consultant</h3>
+                                <p>Various Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="experience-card">
+                    <h3>Chief Technology Officer (CTO) & Co-Founder</h3>
+                    <div class="exp-meta">Cypher Core Security | 2023 – Present | Pretoria</div>
+                    <ul>
+                        <li>Co-founded a technology startup specializing in website development and cybersecurity solutions.</li>
+                        <li>Oversee daily operations, client project management, and technical delivery.</li>
+                        <li>Design and implement secure, responsive web solutions for diverse clients.</li>
+                        <li>Lead technical teams while managing project timelines and quality assurance.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section portfolio-section">
+            <div class="container">
+                <h2 class="section-title">Cybersecurity Portfolio</h2>
+                <p class="section-subtitle">Interactive Portfolio - Click cards for 3D exploration</p>
+                
+                <!-- Portfolio 3D Scene -->
+                <div class="portfolio-3d-scene">
+                    <div class="scene-controls">
+                        <button class="scene-rotate"><i class="fas fa-sync-alt"></i> Rotate</button>
+                        <button class="scene-zoom-in"><i class="fas fa-search-plus"></i></button>
+                        <button class="scene-zoom-out"><i class="fas fa-search-minus"></i></button>
+                    </div>
+                    <div class="project-container-3d">
+                        <!-- 3D Projects will be added here by JS -->
+                    </div>
+                </div>
+                
+                <div class="portfolio-grid">
+                    <div class="portfolio-card" data-project="web-security" data-3d-model="security-web">
+                        <div class="card-3d-indicator"><i class="fas fa-cube"></i> 3D View</div>
+                        <div class="card-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Web Security Assessments</h3>
+                        <p>Performed comprehensive web security testing including XSS, SQL injection, session hijacking, and directory traversal on enterprise portals.</p>
+                        <div class="card-tags">
+                            <span>OWASP Top 10</span><span>XSS</span><span>SQL Injection</span>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card" data-project="network-security" data-3d-model="network-topology">
+                        <div class="card-3d-indicator"><i class="fas fa-cube"></i> 3D View</div>
+                        <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+                        <h3>Network Security & IDS Evasion</h3>
+                        <p>Mastered network security techniques including packet analysis, IDS/IPS evasion, honeypot detection, and TCP desynchronization.</p>
+                        <div class="card-tags">
+                            <span>IDS/IPS</span><span>Wireshark</span><span>Evasion</span>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card" data-project="cryptography" data-3d-model="encryption-layers">
+                        <div class="card-3d-indicator"><i class="fas fa-cube"></i> 3D View</div>
+                        <div class="card-icon"><i class="fas fa-lock"></i></div>
+                        <h3>Cryptography & Steganography</h3>
+                        <p>Implemented cryptographic systems including AES-256-GCM encryption, RSA digital signatures, and hash cracking with Hashcat.</p>
+                        <div class="card-tags">
+                            <span>AES-256</span><span>RSA</span><span>Hashcat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="section certificates-section">
+            <div class="container">
+                <h2 class="section-title">Certificates & Achievements</h2>
+                <p class="section-subtitle">Tap certificates for 3D examination</p>
+                
+                <!-- Certificates 3D Wall -->
+                <div class="certificates-3d-wall">
+                    <div class="cert-wall-container">
+                        <!-- Certificates will be added here by JS -->
+                    </div>
+                </div>
+                
+                <div class="certificates-grid">
+                    <div class="certificate-card" data-cert-3d="ccna">
+                        <div class="cert-3d-badge"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <div class="cert-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3>CCNA: Enterprise Networking, Security, and Automation</h3>
+                            <div class="cert-meta">
+                                <span class="cert-issuer">Tshwane University of Technology - Cisco Networking Academy</span>
+                                <span class="cert-date">Issued: Nov 30, 2025</span>
+                            </div>
+                            <p class="cert-desc">Comprehensive certification covering enterprise networking concepts, security protocols, and network automation technologies.</p>
+                            <a href="Assets/Certificates/CCNA-_Enterprise_Networking-_Security-_and_Automation_certificate_230988641-tut4life-ac-za_e8c63a26-6cde-4674-85db-da6393a824ee.pdf" class="cert-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="certificate-card" data-cert-3d="cybersecurity">
+                        <div class="cert-3d-badge"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <div class="cert-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3>Cybersecurity Foundations</h3>
+                            <div class="cert-meta">
+                                <span class="cert-issuer">Simpli Learn</span>
+                                <span class="cert-date">Issued: 2025</span>
+                            </div>
+                            <p class="cert-desc">Comprehensive certification covering enterprise networking concepts, security protocols, and network automation technologies.</p>
+                            <a href="#" class="cert-link">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificates-grid">
+                    <div class="certificate-card" data-cert-3d="java">
+                        <div class="cert-3d-badge"><i class="fas fa-expand-arrows-alt"></i></div>
+                        <div class="cert-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3>Object-Oriented Programming</h3>
+                            <div class="cert-meta">
+                                <span class="cert-issuer">Simpli Learn</span>
+                                <span class="cert-date">Issued: Nov 30, 2025</span>
+                            </div>
+                            <p class="cert-desc">Comprehensive Understanding Of OOP Concepts, Design Patterns and Java Programming Principles.</p>
+                            <a href="" class="cert-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Available for cybersecurity projects, network security consultations, and freelance opportunities</p>
+                
+                <!-- Contact 3D Map -->
+                <div class="contact-3d-map">
+                    <div class="map-marker" data-location="pretoria">
+                        <div class="marker-pulse"></div>
+                        <div class="marker-label">Based in Pretoria, South Africa</div>
+                    </div>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email</h3>
+                        <p>tebogotshepiso31@gmail.com</p>
+                        <a href="mailto:tebogotshepiso31@gmail.com?subject=Cybersecurity Opportunity&body=Hello Tebogo,%0D%0A%0D%0AI came across your portfolio and would like to discuss..." 
+                        class="contact-link">Send Professional Email</a>
+                        <span class="contact-note">Response time: 24-48 hours</span>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <h3>Phone & WhatsApp</h3>
+                        <p>+27 63 264 0326</p>
+                        <a href="tel:+27632640326" class="contact-link">Call Now</a>
+                        <span class="contact-note">Available: Mon-Fri, 9AM-6PM</span>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <h3>GitHub</h3>
+                        <p>Security Tools & Projects</p>
+                        <a href="https://github.com/H1as" target="_blank" class="contact-link">View Code Portfolio</a>
+                        <span class="contact-note">Open-source security tools</span>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <h3>LinkedIn</h3>
+                        <p>Professional Network</p>
+                        <a href="https://linkedin.com" target="_blank" class="contact-link">Connect Professionally</a>
+                        <span class="contact-note">Network Security Specialist</span>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-briefcase"></i></div>
+                        <h3>Freelance Availability</h3>
+                        <p>Cybersecurity Projects</p>
+                        <a href="#contact" class="contact-link">Request Proposal</a>
+                        <span class="contact-note">Available for contract work</span>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Consultation</h3>
+                        <p>Security Audit & Assessment</p>
+                        <a href="mailto:tebogotshepiso31@gmail.com?subject=Security Consultation" 
+                        class="contact-link">Schedule Meeting</a>
+                        <span class="contact-note">Free initial consultation</span>
+                    </div>
+                </div>
+                
+                <!-- Professional Services -->
+                <div class="services-cta" style="margin-top: 50px; text-align: center;">
+                    <h3>Professional Services Offered</h3>
+                    <div class="services-tags" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 20px 0;">
+                        <span class="service-tag">Web Security Audits</span>
+                        <span class="service-tag">Network Penetration Testing</span>
+                        <span class="service-tag">Security Training</span>
+                        <span class="service-tag">Incident Response</span>
+                        <span class="service-tag">Secure Code Review</span>
+                    </div>
+                    <a href="mailto:tebogotshepiso31@gmail.com" class="btn btn-primary" style="margin-top: 20px;">
+                        <i class="fas fa-paper-plane"></i> Request Service Quote
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Tebogo Gift Nkosi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
